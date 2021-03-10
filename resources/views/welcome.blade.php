@@ -263,7 +263,7 @@ Author URL: http://w3layouts.com
                 </a>
                 <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
                 <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                  <iframe src="https://open.spotify.com/embed/playlist/0kliONwqwajQXN7uNvcJuD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  <iframe src="https://open.spotify.com/embed-podcast/show/1B9rQ9K0EkvuHoNowBxK2X" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
               </div>
             </div>
