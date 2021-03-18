@@ -28,7 +28,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')->hourly();
         $schedule->call(function() {
           Profile::where('username', 'medcast_id')->first()->refreshFeed(9);
-        })->twiceDaily();
+        })->everySixHours();
 
         $schedule->command('instagram-feed:refresh-tokens')->monthlyOn(15, '03:00');
     }
