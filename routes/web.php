@@ -15,7 +15,7 @@ use \Dymantic\InstagramFeed\Profile;
 */
 
 Route::get('/', function () {
-    $feed = Profile::where('username', 'medcast_id')->first()->feed(9);
+    $feed = Profile::where('username', 'medcast_id')->first()->refreshFeed(9);
 
     return view('welcome', ['instagram' => $feed]);
 });
