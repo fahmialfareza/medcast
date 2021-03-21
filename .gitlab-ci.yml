@@ -1,0 +1,24 @@
+# We have 1 Deploy
+stages:
+  - deploy
+
+# Config cache
+cache:
+  paths:
+    - vendor/
+
+# Deploy job
+deploy:
+  type: deploy
+  # Attach Deploy job to Deploy stage
+  stage: deploy
+  # Config to use our Runner with Executor Shell
+  tags:
+    - medcast
+  script:
+    # Only copy changed files to project folder
+    - cp -r -u * $PROJECT_DIR
+    - cd $PROJECT_DIR
+    - composer install
+  only:
+    - main
