@@ -17,7 +17,7 @@ deploy:
     - medcast
   script:
     # Only copy changed files to project folder
-    - cp -r -u * $PROJECT_DIR
+    - sudo cp -r -u * $PROJECT_DIR
     - cd $PROJECT_DIR
     - composer install
   only:
