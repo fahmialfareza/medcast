@@ -278,18 +278,21 @@ Author URL: http://w3layouts.com
         <div class="container">
           <h3 class="title-big mb-4 pb-2">Info</h3>
           <div class="row">
-            <div class="col-lg-4 col-md-6 column column-img" id="zoomIn">
+            <div class="col-lg-4 col-md-6 column column-img mb-4" id="zoomIn">
               <div class="services-gd">
                 <div class="serve-info">
                   <h3 class="date">{{  date("d M Y", strtotime($instagram[0]['timestamp'])) }}</h3>
                   <a href={{ $instagram[0]['permalink'] }} target="_blank">
                     <figure>
                       @if ($instagram[0]['type'] == 'image')
-                        <img
-                          class="img-responsive"
-                          src={{ $instagram[0]['url'] }}
-                          alt="blog-image"
-                        />
+                        <div class="embed-responsive embed-responsive-1by1">
+                          <img
+                            class="img-responsive embed-responsive-item"
+                            src={{ $instagram[0]['url'] }}
+                            alt="blog-image"
+                            style="object-fit: cover;"
+                          />
+                        </div>
                       @elseif ($instagram[0]['type'] == 'video')
                         <div class="embed-responsive embed-responsive-1by1">
                           <iframe class="embed-responsive-item" src={{ $instagram[0]['url'] }} allowfullscreen></iframe>
@@ -317,7 +320,7 @@ Author URL: http://w3layouts.com
               </div>
             </div>
             <div
-              class="col-lg-4 col-md-6 column column-img mt-md-0 mt-4"
+              class="col-lg-4 col-md-6 column column-img mb-4"
               id="zoomIn"
             >
             <div class="services-gd">
@@ -326,11 +329,14 @@ Author URL: http://w3layouts.com
                 <a href={{ $instagram[1]['permalink'] }} target="_blank">
                   <figure>
                     @if ($instagram[1]['type'] == 'image')
-                      <img
-                        class="img-responsive"
-                        src={{ $instagram[1]['url'] }}
-                        alt="blog-image"
-                      />
+                      <div class="embed-responsive embed-responsive-1by1">
+                        <img
+                          class="img-responsive embed-responsive-item"
+                          src={{ $instagram[1]['url'] }}
+                          alt="blog-image"
+                          style="object-fit: cover;"
+                        />
+                      </div>
                     @elseif ($instagram[1]['type'] == 'video')
                       <div class="embed-responsive embed-responsive-1by1">
                         <iframe class="embed-responsive-item" src={{ $instagram[1]['url'] }} allowfullscreen></iframe>
@@ -358,7 +364,7 @@ Author URL: http://w3layouts.com
             </div>
             </div>
             <div
-              class="col-lg-4 col-md-6 mt-lg-0 mt-md-5 mt-4 column column-img"
+              class="col-lg-4 col-md-6 column column-img mb-4"
               id="zoomIn"
             >
             <div class="services-gd">
@@ -367,11 +373,14 @@ Author URL: http://w3layouts.com
                 <a href={{ $instagram[2]['permalink'] }} target="_blank">
                   <figure>
                     @if ($instagram[2]['type'] == 'image')
-                      <img
-                        class="img-responsive"
-                        src={{ $instagram[2]['url'] }}
-                        alt="blog-image"
-                      />
+                      <div class="embed-responsive embed-responsive-1by1">
+                        <img
+                          class="img-responsive embed-responsive-item"
+                          src={{ $instagram[2]['url'] }}
+                          alt="blog-image"
+                          style="object-fit: cover;"
+                        />
+                      </div>
                     @elseif ($instagram[2]['type'] == 'video')
                       <div class="embed-responsive embed-responsive-1by1">
                         <iframe class="embed-responsive-item" src={{ $instagram[2]['url'] }} allowfullscreen></iframe>
@@ -398,20 +407,21 @@ Author URL: http://w3layouts.com
               </div>
             </div>
             </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-lg-4 col-md-6 column column-img" id="zoomIn">
+            <div class="col-lg-4 col-md-6 column column-img mb-4" id="zoomIn">
               <div class="services-gd">
                 <div class="serve-info">
                   <h3 class="date">{{  date("d M Y", strtotime($instagram[3]['timestamp'])) }}</h3>
                   <a href={{ $instagram[3]['permalink'] }} target="_blank">
                     <figure>
                       @if ($instagram[3]['type'] == 'image')
-                        <img
-                          class="img-responsive"
-                          src={{ $instagram[3]['url'] }}
-                          alt="blog-image"
-                        />
+                        <div class="embed-responsive embed-responsive-1by1">
+                          <img
+                            class="img-responsive embed-responsive-item"
+                            src={{ $instagram[3]['url'] }}
+                            alt="blog-image"
+                            style="object-fit: cover;"
+                          />
+                        </div>
                       @elseif ($instagram[3]['type'] == 'video')
                         <div class="embed-responsive embed-responsive-1by1">
                           <iframe class="embed-responsive-item" src={{ $instagram[3]['url'] }} allowfullscreen></iframe>
@@ -439,7 +449,7 @@ Author URL: http://w3layouts.com
               </div>
             </div>
             <div
-              class="col-lg-4 col-md-6 column column-img mt-md-0 mt-4"
+              class="col-lg-4 col-md-6 column column-img mb-4"
               id="zoomIn"
             >
             <div class="services-gd">
@@ -448,11 +458,14 @@ Author URL: http://w3layouts.com
                 <a href={{ $instagram[4]['permalink'] }} target="_blank">
                   <figure>
                     @if ($instagram[4]['type'] == 'image')
-                      <img
-                        class="img-responsive"
-                        src={{ $instagram[4]['url'] }}
-                        alt="blog-image"
-                      />
+                      <div class="embed-responsive embed-responsive-1by1">
+                        <img
+                          class="img-responsive embed-responsive-item"
+                          src={{ $instagram[4]['url'] }}
+                          alt="blog-image"
+                          style="object-fit: cover;"
+                        />
+                      </div>
                     @elseif ($instagram[4]['type'] == 'video')
                       <div class="embed-responsive embed-responsive-1by1">
                         <iframe class="embed-responsive-item" src={{ $instagram[4]['url'] }} allowfullscreen></iframe>
@@ -480,7 +493,7 @@ Author URL: http://w3layouts.com
             </div>
             </div>
             <div
-              class="col-lg-4 col-md-6 mt-lg-0 mt-md-5 mt-4 column column-img"
+              class="col-lg-4 col-md-6 column column-img mb-4"
               id="zoomIn"
             >
             <div class="services-gd">
@@ -489,11 +502,14 @@ Author URL: http://w3layouts.com
                 <a href={{ $instagram[5]['permalink'] }} target="_blank">
                   <figure>
                     @if ($instagram[5]['type'] == 'image')
-                      <img
-                        class="img-responsive"
-                        src={{ $instagram[5]['url'] }}
-                        alt="blog-image"
-                      />
+                      <div class="embed-responsive embed-responsive-1by1">
+                        <img
+                          class="img-responsive embed-responsive-item"
+                          src={{ $instagram[5]['url'] }}
+                          alt="blog-image"
+                          style="object-fit: cover;"
+                        />
+                      </div>
                     @elseif ($instagram[5]['type'] == 'video')
                       <div class="embed-responsive embed-responsive-1by1">
                         <iframe class="embed-responsive-item" src={{ $instagram[5]['url'] }} allowfullscreen></iframe>
@@ -520,20 +536,22 @@ Author URL: http://w3layouts.com
               </div>
             </div>
             </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-lg-4 col-md-6 column column-img" id="zoomIn">
+
+            <div class="col-lg-4 col-md-6 column column-img mb-4" id="zoomIn">
               <div class="services-gd">
                 <div class="serve-info">
                   <h3 class="date">{{  date("d M Y", strtotime($instagram[6]['timestamp'])) }}</h3>
                   <a href={{ $instagram[6]['permalink'] }} target="_blank">
                     <figure>
                       @if ($instagram[6]['type'] == 'image')
-                        <img
-                          class="img-responsive"
-                          src={{ $instagram[6]['url'] }}
-                          alt="blog-image"
-                        />
+                        <div class="embed-responsive embed-responsive-1by1">
+                          <img
+                            class="img-responsive embed-responsive-item"
+                            src={{ $instagram[6]['url'] }}
+                            alt="blog-image"
+                            style="object-fit: cover;"
+                          />
+                        </div>
                       @elseif ($instagram[6]['type'] == 'video')
                         <div class="embed-responsive embed-responsive-1by1">
                           <iframe class="embed-responsive-item" src={{ $instagram[6]['url'] }} allowfullscreen></iframe>
@@ -561,7 +579,7 @@ Author URL: http://w3layouts.com
               </div>
             </div>
             <div
-              class="col-lg-4 col-md-6 column column-img mt-md-0 mt-4"
+              class="col-lg-4 col-md-6 column column-img mb-4"
               id="zoomIn"
             >
             <div class="services-gd">
@@ -570,11 +588,14 @@ Author URL: http://w3layouts.com
                 <a href={{ $instagram[7]['permalink'] }} target="_blank">
                   <figure>
                     @if ($instagram[7]['type'] == 'image')
-                      <img
-                        class="img-responsive"
-                        src={{ $instagram[7]['url'] }}
-                        alt="blog-image"
-                      />
+                      <div class="embed-responsive embed-responsive-1by1">
+                        <img
+                          class="img-responsive embed-responsive-item"
+                          src={{ $instagram[7]['url'] }}
+                          alt="blog-image"
+                          style="object-fit: cover;"
+                        />
+                      </div>
                     @elseif ($instagram[7]['type'] == 'video')
                       <div class="embed-responsive embed-responsive-1by1">
                         <iframe class="embed-responsive-item" src={{ $instagram[7]['url'] }} allowfullscreen></iframe>
@@ -602,7 +623,7 @@ Author URL: http://w3layouts.com
             </div>
             </div>
             <div
-              class="col-lg-4 col-md-6 mt-lg-0 mt-md-5 mt-4 column column-img"
+              class="col-lg-4 col-md-6 column column-img mb-4"
               id="zoomIn"
             >
             <div class="services-gd">
@@ -611,11 +632,14 @@ Author URL: http://w3layouts.com
                 <a href={{ $instagram[8]['permalink'] }} target="_blank">
                   <figure>
                     @if ($instagram[8]['type'] == 'image')
-                      <img
-                        class="img-responsive"
-                        src={{ $instagram[8]['url'] }}
-                        alt="blog-image"
-                      />
+                      <div class="embed-responsive embed-responsive-1by1">
+                        <img
+                          class="img-responsive embed-responsive-item"
+                          src={{ $instagram[8]['url'] }}
+                          alt="blog-image"
+                          style="object-fit: cover;"
+                        />
+                      </div>
                     @elseif ($instagram[8]['type'] == 'video')
                       <div class="embed-responsive embed-responsive-1by1">
                         <iframe class="embed-responsive-item" src={{ $instagram[8]['url'] }} allowfullscreen></iframe>
