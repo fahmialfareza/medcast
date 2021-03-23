@@ -496,72 +496,30 @@ Author URL: http://w3layouts.com
               class="col-lg-4 col-md-6 column column-img mb-4"
               id="zoomIn"
             >
-            <div class="services-gd">
-              <div class="serve-info">
-                <h3 class="date">{{  date("d M Y", strtotime($instagram[5]['timestamp'])) }}</h3>
-                <a href={{ $instagram[5]['permalink'] }} target="_blank">
-                  <figure>
-                    @if ($instagram[5]['type'] == 'image')
-                      <div class="embed-responsive embed-responsive-1by1">
-                        <img
-                          class="img-responsive embed-responsive-item"
-                          src={{ $instagram[5]['url'] }}
-                          alt="blog-image"
-                          style="object-fit: cover;"
-                        />
-                      </div>
-                    @elseif ($instagram[5]['type'] == 'video')
-                      <div class="embed-responsive embed-responsive-1by1">
-                        <iframe class="embed-responsive-item" src={{ $instagram[5]['url'] }} allowfullscreen></iframe>
-                      </div>
-                    @endif
-                  </figure>
-                </a>
-                <h3>
-                  <a target="_blank" href={{ $instagram[5]['permalink'] }} class="vv-link text-truncate"
-                    >{{ $instagram[5]['caption'] }}</a
-                  >
-                </h3>
-                <ul class="admin-list">
-                  <li>
-                    <a href="https://www.instagram.com/medcast_id" target="_blank"
-                      ><span
-                        class="fa fa-user-circle"
-                        aria-hidden="true"
-                      ></span>
-                      Admin</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 column column-img mb-4" id="zoomIn">
               <div class="services-gd">
                 <div class="serve-info">
-                  <h3 class="date">{{  date("d M Y", strtotime($instagram[6]['timestamp'])) }}</h3>
-                  <a href={{ $instagram[6]['permalink'] }} target="_blank">
+                  <h3 class="date">{{  date("d M Y", strtotime($instagram[5]['timestamp'])) }}</h3>
+                  <a href={{ $instagram[5]['permalink'] }} target="_blank">
                     <figure>
-                      @if ($instagram[6]['type'] == 'image')
+                      @if ($instagram[5]['type'] == 'image')
                         <div class="embed-responsive embed-responsive-1by1">
                           <img
                             class="img-responsive embed-responsive-item"
-                            src={{ $instagram[6]['url'] }}
+                            src={{ $instagram[5]['url'] }}
                             alt="blog-image"
                             style="object-fit: cover;"
                           />
                         </div>
-                      @elseif ($instagram[6]['type'] == 'video')
+                      @elseif ($instagram[5]['type'] == 'video')
                         <div class="embed-responsive embed-responsive-1by1">
-                          <iframe class="embed-responsive-item" src={{ $instagram[6]['url'] }} allowfullscreen></iframe>
+                          <iframe class="embed-responsive-item" src={{ $instagram[5]['url'] }} allowfullscreen></iframe>
                         </div>
                       @endif
                     </figure>
                   </a>
                   <h3>
-                    <a target="_blank" href={{ $instagram[6]['permalink'] }} class="vv-link text-truncate"
-                      >{{ $instagram[6]['caption'] }}</a
+                    <a target="_blank" href={{ $instagram[5]['permalink'] }} class="vv-link text-truncate"
+                      >{{ $instagram[5]['caption'] }}</a
                     >
                   </h3>
                   <ul class="admin-list">
@@ -577,94 +535,6 @@ Author URL: http://w3layouts.com
                   </ul>
                 </div>
               </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 column column-img mb-4"
-              id="zoomIn"
-            >
-            <div class="services-gd">
-              <div class="serve-info">
-                <h3 class="date">{{  date("d M Y", strtotime($instagram[7]['timestamp'])) }}</h3>
-                <a href={{ $instagram[7]['permalink'] }} target="_blank">
-                  <figure>
-                    @if ($instagram[7]['type'] == 'image')
-                      <div class="embed-responsive embed-responsive-1by1">
-                        <img
-                          class="img-responsive embed-responsive-item"
-                          src={{ $instagram[7]['url'] }}
-                          alt="blog-image"
-                          style="object-fit: cover;"
-                        />
-                      </div>
-                    @elseif ($instagram[7]['type'] == 'video')
-                      <div class="embed-responsive embed-responsive-1by1">
-                        <iframe class="embed-responsive-item" src={{ $instagram[7]['url'] }} allowfullscreen></iframe>
-                      </div>
-                    @endif
-                  </figure>
-                </a>
-                <h3>
-                  <a target="_blank" href={{ $instagram[7]['permalink'] }} class="vv-link text-truncate"
-                    >{{ $instagram[7]['caption'] }}</a
-                  >
-                </h3>
-                <ul class="admin-list">
-                  <li>
-                    <a href="https://www.instagram.com/medcast_id" target="_blank"
-                      ><span
-                        class="fa fa-user-circle"
-                        aria-hidden="true"
-                      ></span>
-                      Admin</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 column column-img mb-4"
-              id="zoomIn"
-            >
-            <div class="services-gd">
-              <div class="serve-info">
-                <h3 class="date">{{  date("d M Y", strtotime($instagram[8]['timestamp'])) }}</h3>
-                <a href={{ $instagram[8]['permalink'] }} target="_blank">
-                  <figure>
-                    @if ($instagram[8]['type'] == 'image')
-                      <div class="embed-responsive embed-responsive-1by1">
-                        <img
-                          class="img-responsive embed-responsive-item"
-                          src={{ $instagram[8]['url'] }}
-                          alt="blog-image"
-                          style="object-fit: cover;"
-                        />
-                      </div>
-                    @elseif ($instagram[8]['type'] == 'video')
-                      <div class="embed-responsive embed-responsive-1by1">
-                        <iframe class="embed-responsive-item" src={{ $instagram[8]['url'] }} allowfullscreen></iframe>
-                      </div>
-                    @endif
-                  </figure>
-                </a>
-                <h3>
-                  <a target="_blank" href={{ $instagram[8]['permalink'] }} class="vv-link text-truncate"
-                    >{{ $instagram[8]['caption'] }}</a
-                  >
-                </h3>
-                <ul class="admin-list">
-                  <li>
-                    <a href="https://www.instagram.com/medcast_id" target="_blank"
-                      ><span
-                        class="fa fa-user-circle"
-                        aria-hidden="true"
-                      ></span>
-                      Admin</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
             </div>
           </div>
         </div>
