@@ -1,0 +1,81 @@
+version: "2.4"
+
+services:
+  traefik:
+    image: traefik:1.7-alpine
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "80:80"
+    command:
+      - --docker
+      - --docker.domain=traefik
+      - --docker.watch
+      - --api
+      - --defaultentrypoints=http,https
+    labels:
+      - traefik.port=80
+      - traefik.frontend.rule=Host:traefik.localhost
+    networks:
+      medcast_network:
+        ipv4_address: 172.1.0.2
+
+  medcast:
+    build:
+      context: .
+    depends_on:
+      - db
+    ports:
+      - "80"
+    volumes:
+      - .:/var/www/html
+    labels:
+      - traefik.port=80
+      - traefik.frontend.rule=Host:medcast.localhost
+    networks:
+      medcast_network:
+        ipv4_address: 172.1.0.3
+
+  # PHPMyAdmin
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - "80"
+    environment:
+      - PMA_HOST=db
+    labels:
+      - traefik.port=80
+      - traefik.frontend.rule=Host:phpmyadmin.localhost
+    networks:
+      medcast_network:
+        ipv4_address: 172.1.0.4
+
+  # MySQL
+  db:
+    image: mysql:8
+    restart: always
+    volumes:
+      - medcast_db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: medcast
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      medcast_network:
+        ipv4_address: 172.1.0.5
+
+networks:
+  medcast_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.1.0.0/16
+          gateway: 172.1.0.1
+
+# Volumes
+volumes:
+  medcast_db:
+  medcast_uploads:

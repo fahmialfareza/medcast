@@ -5,16 +5,107 @@ Author URL: http://w3layouts.com
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <!-- Must -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,uc-fitscreen=yes">
+    <meta name="description" content="Medcast adalah Platform Belajar Kedokteran Berbasis Online. Sistem sepenuhnya tanpa tatap muka. Fitur yang tersedia membantu mahasiswa kedokteran dalam memahami materi dan melatih kecakapan klinis bagi seorang tenaga kesehatan">
+    <meta name="keywords" content="Medical Podcast (medcast.id)">
     <title>
-      Medical Podcast (medcast.id) - Home - Hello, Medcaster! 🌟 We Really Care
-      About Your Knowledge and Let's be A Partner in Every Long Journey 🥼💉
+      Medical Podcast (medcast.id) - Home - Hello, Medcaster! 🌟 We Really Care About Your Knowledge and Let's be A Partner in Every Long Journey 🥼💉
     </title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.medcast.id/" />
+    <meta property="og:title" content="Medical Podcast (medcast.id) - Home - Hello, Medcaster! 🌟 We Really Care About Your Knowledge and Let's be A Partner in Every Long Journey 🥼💉" />
+    <meta
+      property="og:description"
+      content="Medcast adalah Platform Belajar Kedokteran Berbasis Online. Sistem sepenuhnya tanpa tatap muka. Fitur yang tersedia membantu mahasiswa kedokteran dalam memahami materi dan melatih kecakapan klinis bagi seorang tenaga kesehatan"
+    />
+    <meta
+      property="og:image"
+      content="https://www.medcast.id/assets/images/logo.png"
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.telomoyo.co/" />
+    <meta property="twitter:title" content="Medical Podcast (medcast.id) - Home - Hello, Medcaster! 🌟 We Really Care About Your Knowledge and Let's be A Partner in Every Long Journey 🥼💉" />
+    <meta
+      property="twitter:description"
+      content="Medcast adalah Platform Belajar Kedokteran Berbasis Online. Sistem sepenuhnya tanpa tatap muka. Fitur yang tersedia membantu mahasiswa kedokteran dalam memahami materi dan melatih kecakapan klinis bagi seorang tenaga kesehatan"
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.telomoyo.co/assets/images/logo.png"
+    />
+
+    <!-- Android  -->
+    <meta name="theme-color" content="#254b62">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Medicat Podcast (medcast.id)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Windows  -->
+    <meta name="msapplication-navbutton-color" content="#254b62">
+    <meta name="msapplication-TileColor" content="#254b62">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <!-- Pinned Sites  -->
+    <meta name="application-name" content="Medical Podcast (medcast.id)">
+    <meta name="msapplication-tooltip" content="Tooltip Text">
+    <meta name="msapplication-starturl" content="/">
+
+    <!-- Tap highlighting  -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- UC Mobile Browser  -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+
+    <!-- Disable night mode for this page  -->
+    <meta name="nightmode" content="enable">
+
+    <!-- Layout mode -->
+    <meta name="layoutmode" content="fitscreen">
+
+    <!-- imagemode - show image even in text only mode  -->
+    <meta name="imagemode" content="force">
+
+    <!-- Orientation  -->
+    <meta name="screen-orientation" content="portrait">
+
+    <!-- Main Link Tags  -->
+    <link href="/images/icons/favicon-16.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="/images/icons/favicon-32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/images/icons/favicon-48.png" rel="icon" type="image/png" sizes="48x48">
+
+    <!-- iOS  -->
+    <link href="/images/icons/touch-icon-iphone.png" rel="apple-touch-icon">
+    <link href="/images/icons/touch-icon-ipad.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="/images/icons/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="/images/icons/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="152x152">
+
+    <!-- Startup Image  -->
+    <link href="/images/icons/touch-icon-start-up-320x480.png" rel="apple-touch-startup-image">
+
+    <!-- Pinned Tab  -->
+    <link href="/images/icons/icon.svg" rel="mask-icon" size="any" color="red">
+
+    <!-- Android  -->
+    <link href="/images/icons/icon-192x192.png" rel="icon" sizes="192x192">
+    <link href="/images/icons/icon-128x128.png" rel="icon" sizes="128x128">
+
+    <!-- Others -->
+    <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon" />
+
+    <!-- UC Browser  -->
+    <link href="/images/icons/icon-52x52.png" rel="apple-touch-icon-precomposed" sizes="57x57">
+    <link href="/images/icons/icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+
     <!-- google-fonts -->
     <link
       href="//fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
@@ -29,7 +120,7 @@ Author URL: http://w3layouts.com
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style-starter.css" />
-    <link rel="shortcut icon" href="assets/images/logo.ico" />
+    @laravelPWA
   </head>
 
   <body data-spy="scroll" data-target="#main-nav">
