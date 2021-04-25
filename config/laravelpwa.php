@@ -102,16 +102,7 @@ return [
                     "src" => "/images/icons/icon-72x72.png",
                     "purpose" => "any"
                 ]
-            ],
-            [
-                'name' => 'Info',
-                'description' => 'Try Out materi kedokteran berbasis komputer/ aplikasi website',
-                'url' => '/medtrial',
-                'icons' => [
-                    "src" => "/images/icons/icon-72x72.png",
-                    "purpose" => "any"
-                ]
-            ],
+            ]
         ],
         'custom' => []
     ]
