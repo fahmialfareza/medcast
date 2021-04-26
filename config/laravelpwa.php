@@ -5,7 +5,7 @@ return [
     'manifest' => [
         'name' => env('APP_NAME', 'Medical Podcast (medcast.id)'),
         'short_name' => 'medcast.id',
-        'start_url' => '/',
+        'start_url' => 'https://medcast.id/',
         'background_color' => '#333333',
         'theme_color' => '#254b62',
         'display' => 'standalone',
@@ -98,6 +98,15 @@ return [
                 'name' => 'Kontak',
                 'description' => 'Kontak',
                 'url' => '/#contact',
+                'icons' => [
+                    "src" => "/images/icons/icon-72x72.png",
+                    "purpose" => "any"
+                ]
+            ],
+            [
+                'name' => 'Medtrial',
+                'description' => 'Try Out materi kedokteran berbasis komputer/ aplikasi website',
+                'url' => '/medtrial',
                 'icons' => [
                     "src" => "/images/icons/icon-72x72.png",
                     "purpose" => "any"
