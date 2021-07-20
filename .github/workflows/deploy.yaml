@@ -16,22 +16,22 @@ jobs:
       - run: cd $PROJECT_DIR
         env:
           PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
-      - run: echo "DB_DATABASE"=$DB_DATABASE > .env
+      - run: sudo echo "DB_DATABASE"=$DB_DATABASE > .env
         env:
           DB_DATABASE: ${{ secrets.DB_DATABASE }}
-      - run: echo "DB_HOST"=$DB_HOST >> .env
+      - run: sudo echo "DB_HOST"=$DB_HOST >> .env
         env:
           DB_HOST: ${{ secrets.DB_HOST }}
-      - run: echo "DB_PASSWORD"=$DB_PASSWORD >> .env
+      - run: sudo echo "DB_PASSWORD"=$DB_PASSWORD >> .env
         env:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-      - run: echo "DB_USERNAME"=$DB_USERNAME >> .env
+      - run: sudo echo "DB_USERNAME"=$DB_USERNAME >> .env
         env:
           DB_USERNAME: ${{ secrets.DB_USERNAME }}
-      - run: echo "INSTAGRAM_CLIENT_ID"=$INSTAGRAM_CLIENT_ID >> .env
+      - run: sudo echo "INSTAGRAM_CLIENT_ID"=$INSTAGRAM_CLIENT_ID >> .env
         env:
           INSTAGRAM_CLIENT_ID: ${{ secrets.INSTAGRAM_CLIENT_ID }}
-      - run: echo "INSTAGRAM_CLIENT_SECRET"=$INSTAGRAM_CLIENT_SECRET >> .env
+      - run: sudo echo "INSTAGRAM_CLIENT_SECRET"=$INSTAGRAM_CLIENT_SECRET >> .env
         env:
           INSTAGRAM_CLIENT_SECRET: ${{ secrets.INSTAGRAM_CLIENT_SECRET }}
       - run: composer install
