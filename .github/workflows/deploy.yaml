@@ -10,6 +10,9 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
+      - run: sudo cp -r -u * $PROJECT_DIR
+        env:
+          PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
       - run: cd $PROJECT_DIR
         env:
           PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
@@ -31,7 +34,4 @@ jobs:
       - run: echo "INSTAGRAM_CLIENT_SECRET"=$INSTAGRAM_CLIENT_SECRET >> .env
         env:
           INSTAGRAM_CLIENT_SECRET: ${{ secrets.INSTAGRAM_CLIENT_SECRET }}
-      - run: sudo cp -r -u * $PROJECT_DIR
-        env:
-          PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
       - run: composer install
